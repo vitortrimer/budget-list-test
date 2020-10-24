@@ -13,7 +13,10 @@
       </div>
 
       <div class="field is-narrow">
-        <button [disabled]="!itemForm.valid" type="submit" class="button is-primary">Add</button>
+        <button [disabled]="!itemForm.valid" type="submit" [ngClass]="{'is-primary': isNewItem, 'is-success': !isNewItem}" class="button">
+          <p *ngIf="isNewItem">Add</p>
+          <p *ngIf="!isNewItem">Save</p>
+        </button>
       </div>
     </div>
   </div>
