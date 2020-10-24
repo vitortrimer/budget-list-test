@@ -8,6 +8,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { AddItemFormComponent } from './main-page/add-item-form/add-item-form.component';
 import { BudgetItemListComponent } from './main-page/budget-item-list/budget-item-list.component';
 import { BudgetItemCardComponent } from './main-page/budget-item-list/budget-item-card/budget-item-card.component';
+import { EditItemModalComponent } from './main-page/edit-item-modal/edit-item-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { BudgetItemCardComponent } from './main-page/budget-item-list/budget-ite
     MainPageComponent,
     AddItemFormComponent,
     BudgetItemListComponent,
-    BudgetItemCardComponent
+    BudgetItemCardComponent,
+    EditItemModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
