@@ -1,5 +1,9 @@
 # BudgetApp
 
+## This project is a simple static CRUD made with Angular for a budget list
+
+! [App screenshot](https://i.imgur.com/N9R1GdN.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 
 ## Development server
